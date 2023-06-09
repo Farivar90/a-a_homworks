@@ -1,5 +1,7 @@
 
 class Map
+    private
+    
     def initialize
       @map = []
     end
@@ -26,8 +28,6 @@ class Map
     def show
       @map.each { |pair| puts "#{pair[0]} => #{pair[1]}" }
     end
-  
-    private
   
     def find_index(key)
       @map.each_with_index { |pair, index| return index if pair[0] == key }
