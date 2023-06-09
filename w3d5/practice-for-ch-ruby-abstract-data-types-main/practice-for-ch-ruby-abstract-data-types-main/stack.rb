@@ -7,7 +7,7 @@ class Stack
   
     def push(el)
       # adds an element to the stack
-      @stack.unshift(el)
+      @stack.push(el)
     end
   
     def pop
